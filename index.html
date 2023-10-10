@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--/Bootstrap-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--/Font-->
+
+</head>
+<body>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="overflow">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="47" viewBox="0 0 70 47" fill="none">
+                  <path d="M19.8224 34.0672C16.2438 34.0672 13.3424 31.1453 13.3424 27.5416C13.3424 23.9378 16.2438 21.0159 19.8224 21.0159C22.7683 21.0159 25.2551 22.9955 26.0423 25.7055L37.247 19.1229C34.1299 12.5919 27.499 8.08301 19.8224 8.08301C9.15085 8.08301 0.5 16.7956 0.5 27.5415C0.5 38.2883 9.15085 47.0001 19.8224 47.0001C30.494 47.0001 39.1448 38.2883 39.1448 27.5415H26.3024C26.3024 31.1453 23.4009 34.0672 19.8224 34.0672Z" fill="#42454A"/>
+                  <path d="M54.3224 12.2568C45.94 12.2568 39.1448 19.1006 39.1448 27.5413H50.2929C50.2929 25.2998 52.0965 23.4835 54.3224 23.4835C56.5474 23.4835 58.3518 25.2998 58.3518 27.5413C58.3518 29.7828 56.5474 31.5992 54.3224 31.5992C52.3981 31.5992 50.789 30.2415 50.3887 28.4244L40.6347 34.1543C43.0838 39.2843 48.2918 42.8258 54.3224 42.8258C62.7048 42.8258 69.5 35.9828 69.5 27.5414C69.4999 19.1006 62.7048 12.2568 54.3224 12.2568Z" fill="#42454A"/>
+                  <path d="M38.2316 10.2289C41.9933 10.2289 45.7312 9.69808 49.3677 8.72895C50.9488 8.30759 52.6094 8.08303 54.3223 8.08303C55.2528 8.08303 56.1674 8.14912 57.0624 8.27743C56.6183 5.96225 55.3983 3.92496 53.6867 2.45111C51.9118 0.922598 49.6082 0 47.0898 0H21.2173C24.4814 6.09059 30.877 10.2289 38.2316 10.2289Z" fill="#42454A"/>
+              </svg>
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav gap-lg-5 gap-3 mb-lg-0 mb-3 m-auto">
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Information">Product Information</a></li>
+                    <li><a class="dropdown-item" href="#Design">Design</a></li>
+                    <li><a class="dropdown-item" href="#Gallery">Gallery</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#Footer">Footer</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#TESTIMONIALS">TESTIMONIALS</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#SUBSCRIBE">SUBSCRIBE</a>
+                </li>
+  
+              </ul>
+  
+              <div class="navbar-btns">
+                <button class="btn me-2 navbar-login" type="submit">LOG IN</button>
+                <button class="btn navbar-signup" type="submit">SIGN UP</button>
+              </div>
+
+            </div>
+          </div>
+      </nav>
+      <!--/Navbar-->
+  
+      <!--Home-->
+      <section>
+        <div class="container-fluid">
+          <div class="d-xl-flex justify-content-between">
+            <div class="home-div-1">
+                <p class="home-txt-1">LET'S RIDE <br class="home-txt-1-br"> <span> THE FUTURE.</span></p>
+
+                <div class="line-1-2"></div>
+
+                <p class="home-txt-2">Simple and sleek design with users <br class="home-txt-1-br"> in mind.</p>
+
+                <div>
+                  <button class="home-btn border-0 bg-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="58" viewBox="0 0 59 58" fill="none">
+                      <rect x="0.5" width="58" height="58" fill="#42454A"/>
+                      <path d="M41.5 29L35.4655 24L35.4655 28L17.5 28L17.5 30L35.4655 30L35.4655 34L41.5 29Z" fill="#F7EAE3"/>
+                    </svg>
+                    <span>Buy now</span>
+                  </button>
+                </div>
+            </div>
+
+            <div class="home-div-2">
+              <img src="./img-bicycle/bikeBg.png" class="bikeBg">
+            </div>
+          </div>
+          
+          <!-- home-cards -->
+          <div class="scroll-container">
+            <div class="row justify-content-between">
+              <div class="col-2">
+                <div class="card">
+                  <p class="card-num-1">105 <span>lbs</span></p>
+                  <p class="card-txt-1">Net Weight</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-2">
+                  <p class="card-num-1">26 <span>mph</span></p>
+                  <p class="card-txt-1">Top Speed</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-3">
+                  <p class="card-num-1">38 <span>miles</span></p>
+                  <p class="card-txt-1">Max Range</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-4">
+                  <p class="card-num-1">89 <span>nm</span></p>
+                  <p class="card-txt-1">Max Torques</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-5">
+                  <p class="card-num-1">22% <span>slope</span></p>
+                  <p class="card-txt-1">Hill Climbing</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="card card-6">
+                  <p class="card-num-1">2x</p>
+                  <p class="card-txt-1">Hydralic Disc Brakes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--/Home-->
+
+      <!--Information-->
+      <section class="inforamtion-section" id="Information">
+        <div class="container-fluid">
+          <div class="information-text-div text-center">
+            <p class="information-text-1">Product Information</p>
+            <p class="information-text-2">Our Scooter has following unique design and technology features:</p>
+          </div>
+      
+          <div class="row">
+            <div class="col-12 col-lg-7">
+              <img src="./img-bicycle/Information-img-1..png" class="information-img-1">
+            </div>
+            
+            <div class="col-12 col-lg-5 text-center text-lg-start justify-content-start">
+              <p class="information-text-3 mt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Lightweight aircraft grade aluminium frame
+              </p>
+      
+              <p class="information-text-3 i-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Car grade lithium battery
+              </p>
+      
+              <p class="information-text-3 i-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Self-balanced
+              </p>
+      
+              <p class="information-text-3 i-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Plug n play
+              </p>
+      
+              <p class="information-text-3 i-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Quick release adapter
+              </p>
+      
+              <p class="information-text-3 i-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                RFID key card
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/Information-->
+
+      <!--Motor-->
+      <section id="Design">
+        <div class="container-fluid">
+          <div class="motor-text-div text-center">
+            <p class="motor-text-1">High Efficiency Motor</p>
+            <p class="motor-text-2">Our Scooter has following unique design and technology features:</p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="./img-bicycle/Motor-img-1.png" class="motor-img-1">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/Motor-->
+  
+      <!--Accessories-->
+      <section class="accessories-section">
+        <div class="container-fluid">
+          <div class="text-center">
+            <p class="accessories-text-1">High Efficiency Motor</p>
+            <p class="accessories-text-2">Our Scooter has following unique design and technology features:</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-12 col-lg-5 text-center ">
+              <p class="accessories-main-text-3 ms-lg-5">
+                Golf Bag Rock
+              </p>
+              <p class="accessories-text-3 ms-lg-5 mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Material : Aluminium alloy
+              </p>
+              <p class="accessories-text-3 a-2 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Color : Black
+              </p>
+              <p class="accessories-text-3 a-3 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Capacity : 45lbs
+              </p>
+              <p class="accessories-text-3 a-4 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Ease : Steady & adjustable
+              </p>
+            </div>
+  
+            <div class="col-12 col-lg-7 js">
+              <img src="./img-bicycle/accessoriesimg-1.png" class="accessories-img-1">
+              <img src="./img-bicycle/accessoriesimg-2.png" class="accessories-img-2">
+            </div>
+          </div>
+  
+          <div class="row js-2">
+            <div class="col-12 col-lg-7">
+              <img src="./img-bicycle/accessoriesimg-3..png" class="accessories-img-3">
+              <img src="./img-bicycle/accessoriesimg-4.png" class="accessories-img-4">
+            </div>
+  
+            <div class="col-12 col-lg-5 text-center ">
+              <p class="accessories-main-text-3 ms-lg-5">
+                Shopping Rack
+              </p>
+              <p class="accessories-text-3 ms-lg-5 mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Material : Aluminium alloy
+              </p>
+              <p class="accessories-text-3 a-2 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Color : Black
+              </p>
+              <p class="accessories-text-3 a-3 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Capacity : 45lbs
+              </p>
+              <p class="accessories-text-3 a-4 ms-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                <path d="M20.5234 0.137343L37.2105 10.3956L35.887 11.8769L20.0477 2.13833L1.87242 13.3192V35.6873C7.9288 39.4099 13.9913 43.1391 20.0477 46.8617L38.229 35.6808V19.3936L22.9081 37.4349L11.6675 20.9463L22.9081 27.495L49 6.71201L40.0953 17.1977V36.2525C40.0953 36.6488 39.8819 36.9867 39.5708 37.1491L20.5173 48.8692C20.2123 49.0511 19.8525 49.0381 19.5719 48.8627C13.2045 44.9451 6.84317 41.0276 0.475728 37.1101C0.176873 36.9282 0.00609908 36.5969 0.00609908 36.2525L0 12.7475C0 12.3512 0.219567 12.0133 0.53062 11.8509L19.5841 0.130846C19.883 -0.051062 20.2428 -0.0380686 20.5234 0.137343Z" fill="#42454A"/>
+                </svg> 
+                Ease : Steady & adjustable
+              </p>
+            </div>
+          </div>
+  
+          <div class="text-center">
+            <button class="accessories-btn">More Accessories Coming Soon</button>
+          </div>
+  
+      </section>
+      <!--/Accessories-->
+  
+      <!--Gallery-->
+      <section class="gallery-section" id="Gallery">
+        <div class="container-fluid">
+          <div class="text-center">
+            <p class="gallery-text-1">Gallery</p>
+            <p class="gallery-text-2">View gallery of our products and make yourself satisfied with our creation.</p>
+          </div>
+  
+          <div class="row d-for-small">
+            <div class="col-6">
+              <img src="./img-bicycle/gallery-img-1.png" class="gallery-img-1">
+            </div>
+  
+            <div class="col-6">
+              <img src="./img-bicycle/gallery-img-2.png" class="gallery-img-2">
+            </div>
+  
+            <div class="col-6">
+              <div class="row">
+                <button class="col-12 gallery-btn-1">Battery Images</button>
+                <button class="col-12 gallery-btn-1">Spare Parts Images</button>
+                <button class="col-12 gallery-btn-1">Charging Cable Images</button>
+              </div>
+            </div>
+  
+            <div class="col-6">
+              <img src="./img-bicycle/gallery-img-3.png" class="gallery-img-3">
+            </div>
+          </div>
+          
+          <div class="scroll-container d-for-small-2">
+            <img src="./img-bicycle/gallery-img-1.png" class="gallery-img-1">
+            <img src="./img-bicycle/gallery-img-2.png" class="gallery-img-2">
+            <img src="./img-bicycle/gallery-img-3.png" class="gallery-img-3">
+          </div>
+  
+          <div class="row d-for-small-2 ta">
+            <button class="col-12 gallery-btn-1">Battery Images</button>
+            <button class="col-12 gallery-btn-1">Spare Parts Images</button>
+            <button class="col-12 gallery-btn-1">Charging Cable Images</button>
+          </div>
+  
+  
+        </div>
+      </section>
+      <!--/Gallery-->
+  
+      <!--Colors-->
+      <section>
+        <div class="text-center">
+          <p class="colors-text-1">Colors</p>
+          <p class="colors-text-2">Checkout our products colors.</p>
+        </div>
+    
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img-bicycle/colors-img-1.png" class="d-block colors-img-1">
+            </div> 
+            <div class="carousel-item">
+              <img src="./img-bicycle/colors-img-2.2.2.png" class="d-block colors-img-1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img-bicycle/colors-img-3.3.png" class="d-block colors-img-1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img-bicycle/colors-img-4.4.png" class="d-block colors-img-1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img-bicycle/colors-img-5.5.png" class="d-block colors-img-1">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+        <div class="row colors-img-m">
+          <img src="./img-bicycle/colors-img-2.png" class="col-3 colors-imgs position-relative">
+          <img src="./img-bicycle/colors-img-3.png" class="col-3 colors-imgs position-relative">
+          <img src="./img-bicycle/colors-img-4.png" class="col-3 colors-imgs position-relative">
+          <img src="./img-bicycle/colors-img-5.png" class="col-3 colors-imgs position-relative">
+        </div>
+      </section>
+      <!--/Colors-->
+  
+      <!--Testimonials-->
+      <section class="testimonials-section" id="TESTIMONIALS">
+        <div class="container">
+          <div class="text-center">
+            <p class="testimonials-text-1">Testimonials</p>
+          </div>
+  
+          <div class="d-flex m-auto scroll-container-2 gap-3">
+            <div class="testimonials-card">
+              <div class="card-stars text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="17" viewBox="0 0 96 17" fill="none">
+                  <path d="M8.72727 0L11.0357 5.20317L17.0274 5.6535L12.4623 9.31956L13.857 14.8011L8.72727 11.8636L3.59751 14.8011L4.99222 9.31956L0.427143 5.6535L6.41888 5.20317L8.72727 0Z" fill="#FE8B75"/>
+                  <path d="M28.3637 0L30.6721 5.20317L36.6639 5.6535L32.0988 9.31956L33.4935 14.8011L28.3637 11.8636L23.234 14.8011L24.6287 9.31956L20.0636 5.6535L26.0554 5.20317L28.3637 0Z" fill="#FE8B75"/>
+                  <path d="M48 0L50.3084 5.20317L56.3001 5.6535L51.735 9.31956L53.1297 14.8011L48 11.8636L42.8702 14.8011L44.2649 9.31956L39.6998 5.6535L45.6916 5.20317L48 0Z" fill="#FE8B75"/>
+                  <path d="M67.6365 0L69.9448 5.20317L75.9366 5.6535L71.3715 9.31956L72.7662 14.8011L67.6365 11.8636L62.5067 14.8011L63.9014 9.31956L59.3363 5.6535L65.3281 5.20317L67.6365 0Z" fill="#FE8B75"/>
+                  <path d="M87.2727 0L89.5811 5.20317L95.5728 5.6535L91.0077 9.31956L92.4024 14.8011L87.2727 11.8636L82.1429 14.8011L83.5376 9.31956L78.9726 5.6535L84.9643 5.20317L87.2727 0Z" fill="#FE8B75"/>
+                </svg>
+              </div>
+              <p class="testimonials-txt-1">On the other hand, we denounce <br> with righteous indignation and <br> dislike men who are so beguiled <br> and demoralized by the charms of <br> pleasure.</p>
+              <div class="d-flex justify-content-center">
+                <img src="./img-bicycle/Testimonials-img-1.svg" class="mb-3">
+                <p class=" ms-2">Serhiy Hipskyy <br> <span>CEO Universal</span></p>
+              </div>
+            </div>
+            <div class="testimonials-card">
+              <div class="card-stars text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="17" viewBox="0 0 96 17" fill="none">
+                  <path d="M8.72727 0L11.0357 5.20317L17.0274 5.6535L12.4623 9.31956L13.857 14.8011L8.72727 11.8636L3.59751 14.8011L4.99222 9.31956L0.427143 5.6535L6.41888 5.20317L8.72727 0Z" fill="#FE8B75"/>
+                  <path d="M28.3637 0L30.6721 5.20317L36.6639 5.6535L32.0988 9.31956L33.4935 14.8011L28.3637 11.8636L23.234 14.8011L24.6287 9.31956L20.0636 5.6535L26.0554 5.20317L28.3637 0Z" fill="#FE8B75"/>
+                  <path d="M48 0L50.3084 5.20317L56.3001 5.6535L51.735 9.31956L53.1297 14.8011L48 11.8636L42.8702 14.8011L44.2649 9.31956L39.6998 5.6535L45.6916 5.20317L48 0Z" fill="#FE8B75"/>
+                  <path d="M67.6365 0L69.9448 5.20317L75.9366 5.6535L71.3715 9.31956L72.7662 14.8011L67.6365 11.8636L62.5067 14.8011L63.9014 9.31956L59.3363 5.6535L65.3281 5.20317L67.6365 0Z" fill="#FE8B75"/>
+                  <path d="M87.2727 0L89.5811 5.20317L95.5728 5.6535L91.0077 9.31956L92.4024 14.8011L87.2727 11.8636L82.1429 14.8011L83.5376 9.31956L78.9726 5.6535L84.9643 5.20317L87.2727 0Z" fill="#FE8B75"/>
+                </svg>
+              </div>
+              <p class="testimonials-txt-1">Nam libero tempore, cum soluta <br> nobis est eligendi optio cumque <br> nihil impedit quo minus id quod <br> maxime placeat facere possimus.</p>
+              <div class="d-flex justify-content-center">
+                <img src="./img-bicycle/Testimonials-img-2.svg" class="mb-3">
+                <p class=" ms-2">Justus Menke <br> <span>CEO Eronaman</span></p>
+              </div>
+            </div>
+            <div class="testimonials-card">
+              <div class="card-stars text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="17" viewBox="0 0 96 17" fill="none">
+                  <path d="M8.72727 0L11.0357 5.20317L17.0274 5.6535L12.4623 9.31956L13.857 14.8011L8.72727 11.8636L3.59751 14.8011L4.99222 9.31956L0.427143 5.6535L6.41888 5.20317L8.72727 0Z" fill="#FE8B75"/>
+                  <path d="M28.3637 0L30.6721 5.20317L36.6639 5.6535L32.0988 9.31956L33.4935 14.8011L28.3637 11.8636L23.234 14.8011L24.6287 9.31956L20.0636 5.6535L26.0554 5.20317L28.3637 0Z" fill="#FE8B75"/>
+                  <path d="M48 0L50.3084 5.20317L56.3001 5.6535L51.735 9.31956L53.1297 14.8011L48 11.8636L42.8702 14.8011L44.2649 9.31956L39.6998 5.6535L45.6916 5.20317L48 0Z" fill="#FE8B75"/>
+                  <path d="M67.6365 0L69.9448 5.20317L75.9366 5.6535L71.3715 9.31956L72.7662 14.8011L67.6365 11.8636L62.5067 14.8011L63.9014 9.31956L59.3363 5.6535L65.3281 5.20317L67.6365 0Z" fill="#FE8B75"/>
+                  <path d="M87.2727 0L89.5811 5.20317L95.5728 5.6535L91.0077 9.31956L92.4024 14.8011L87.2727 11.8636L82.1429 14.8011L83.5376 9.31956L78.9726 5.6535L84.9643 5.20317L87.2727 0Z" fill="#FE8B75"/>
+                </svg>
+              </div>
+              <p class="testimonials-txt-1">On the other hand, we denounce <br> with righteous indignation and <br> dislike men who are so beguiled <br> and demoralized by the charms of <br> pleasure.</p>
+              <div class="d-flex justify-content-center">
+                <img src="./img-bicycle/Testimonials-img-3.svg" class="mb-3">
+                <p class=" ms-2">Britain Eriksen <br> <span>CEO Universal</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="text-center mt-5">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="108" height="42" viewBox="0 0 108 42" fill="none">
+                <rect x="66" width="42" height="42" rx="21" fill="#42454A"/>
+                <path d="M80 21H94M94 21L90 17M94 21L90 25" stroke="#FAFAFA" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#42454A"/>
+                <path d="M28 21H14M14 21L18 17M14 21L18 25" stroke="#42454A" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--/Testimonials-->
+  
+      <!--Subscribe-->
+      <section id="SUBSCRIBE">
+        <div class="container">
+          <div class="text-center">
+            <p class="subscribe-text-1">Subscribe To Newsletter</p>
+            <p class="subscribe-text-2">Subscribe to our newsletter to get amazing offers in future.</p>
+          </div>
+  
+          <div class="input-group mb-3 justify-content-center">
+            <input  class="subscribe-input" type="email" class="form-control" placeholder="Enter your email." aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button class="btn subscribe-btn" type="button" id="button-addon1">Get start</button>
+          </div>
+        </div>
+      </section>
+      <!--/Subscribe-->
+  
+  
+      <!--Footer-->
+      <footer class="footer" id="Footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <img src="./img-bicycle/footer-img-1.png" class="footer-img-1">
+            </div>
+  
+            <div class="col-lg-2 col-6">
+              <div class="row first-div-text">
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-main-list-txt-1">About</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Company</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Teams</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Profile</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Careers</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-6">
+              <div class="row second-div-text">
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-main-list-txt-1">Resources</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Contact </p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Application</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">FQA Features</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-2 col-6">
+              <div class="row third-div-text">
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-main-list-txt-1">Legals</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Copyright-Privacy</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Privacy Policy</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="text-decoration-none">
+                    <p class="footer-list-txt-1">Terms</p>
+                  </a>
+                </div>
+  
+                <div class="col-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" viewBox="0 0 128 32" fill="none">
+                    <a href="#">
+                     <circle cx="112" cy="16" r="16" fill="#FAFAFC"/>
+                     <path d="M117.788 8.14478H106.135C104.82 8.14478 103.817 9.14717 103.817 10.4628V22.1156C103.817 23.4312 104.82 24.4336 106.135 24.4336H117.788C119.104 24.4336 120.106 23.4312 120.106 22.1156V10.4628C120.106 9.14717 119.104 8.14478 117.788 8.14478ZM111.962 21.1758C114.656 21.1758 116.848 19.0458 116.848 16.4771C116.848 16.3056 116.839 16.1245 116.82 15.945C116.778 15.5532 117.067 15.1615 117.461 15.1615C117.78 15.1615 118.039 15.42 118.039 15.7388V21.8023C118.039 22.1156 117.788 22.4288 117.412 22.4288H106.511C106.198 22.4288 105.885 22.1782 105.885 21.8023V15.7184C105.885 15.3762 106.162 15.0989 106.504 15.0989C106.916 15.0989 107.212 15.4945 107.166 15.9036C107.147 16.0739 107.138 16.2442 107.138 16.4145C107.075 19.0458 109.268 21.1758 111.962 21.1758ZM111.962 19.2964C110.208 19.2964 108.829 17.9181 108.829 16.2265C108.829 14.535 110.208 13.1567 111.962 13.1567C113.716 13.1567 115.094 14.535 115.094 16.2265C115.094 17.9807 113.716 19.2964 111.962 19.2964ZM117.976 12.5929C117.976 12.9688 117.663 13.282 117.287 13.282H115.533C115.157 13.282 114.844 12.9688 114.844 12.5929V10.9013C114.844 10.5255 115.157 10.2122 115.533 10.2122H117.287C117.663 10.2122 117.976 10.5255 117.976 10.9013V12.5929Z" fill="#42454A"/>
+                    </a>
+         
+                    <a href="#">
+                     <circle cx="64" cy="16" r="16" fill="#FAFAFC"/>
+                     <path d="M72.2693 11.158C71.6876 11.4001 71.0227 11.5614 70.3579 11.6421C71.0227 11.2387 71.6045 10.5932 71.8538 9.86706C71.1889 10.2705 70.5241 10.5125 69.693 10.6739C69.1113 10.0284 68.1971 9.625 67.2829 9.625C65.4546 9.625 63.9587 11.0773 63.9587 12.8524C63.9587 13.0944 63.9587 13.3365 64.0418 13.5785C61.2993 13.4172 58.8061 12.1262 57.144 10.1898C56.8946 10.6739 56.7284 11.2387 56.7284 11.8035C56.7284 12.9331 57.3102 13.9013 58.2243 14.4661C57.6426 14.4661 57.144 14.3047 56.7284 14.0627C56.7284 15.5957 57.8919 16.9673 59.3878 17.2094C59.1385 17.29 58.8061 17.2901 58.4737 17.2901C58.2243 17.2901 58.0581 17.29 57.8088 17.2094C58.2243 18.5003 59.4709 19.4685 60.9668 19.4685C59.8034 20.3561 58.3906 20.8402 56.8115 20.8402C56.5622 20.8402 56.3129 20.8402 55.9805 20.7595C57.4764 21.647 59.2216 22.2118 61.1331 22.2118C67.2829 22.2118 70.6072 17.2901 70.6072 13.0138V12.6103C71.272 12.3683 71.8538 11.8035 72.2693 11.158Z" fill="#42454A"/>
+                    </a>
+         
+                    <a href="#">
+                     <circle cx="16" cy="16.0002" r="16" fill="#FAFAFC"/>
+                     <path d="M19.3808 12.0668C19.4632 12.0668 19.5291 12.0998 19.5786 12.1657C19.6445 12.2152 19.6775 12.2811 19.6775 12.3635V14.317C19.6775 14.3994 19.6445 14.4736 19.5786 14.5395C19.5291 14.589 19.4632 14.6137 19.3808 14.6137H16.9328C16.8503 14.6137 16.8091 14.6549 16.8091 14.7374V24.4305C16.8091 24.5129 16.7762 24.5871 16.7102 24.653C16.6608 24.7025 16.5948 24.7272 16.5124 24.7272H14.2375C14.1551 24.7272 14.0809 24.7025 14.0149 24.653C13.9655 24.5871 13.9408 24.5129 13.9408 24.4305V14.7374C13.9408 14.6549 13.8995 14.6137 13.8171 14.6137H12.284C12.2016 14.6137 12.1274 14.589 12.0615 14.5395C12.012 14.4736 11.9873 14.3994 11.9873 14.317V12.3635C11.9873 12.2811 12.012 12.2152 12.0615 12.1657C12.1274 12.0998 12.2016 12.0668 12.284 12.0668H13.8171C13.8995 12.0668 13.9408 12.0256 13.9408 11.9432V11.4981C13.9408 10.4265 14.0809 9.6023 14.3611 9.02533C14.6414 8.43187 15.1029 8.01151 15.7459 7.76423C16.3888 7.51696 17.2954 7.40156 18.4659 7.41805H19.3313C19.4137 7.41805 19.4797 7.45102 19.5291 7.51696C19.5951 7.56641 19.628 7.63235 19.628 7.71478V9.44569C19.628 9.52812 19.5951 9.6023 19.5291 9.66824C19.4797 9.7177 19.4137 9.74242 19.3313 9.74242H18.6884C17.9795 9.74242 17.485 9.88254 17.2048 10.1628C16.941 10.443 16.8091 10.9541 16.8091 11.6959V11.9432C16.8091 12.0256 16.8503 12.0668 16.9328 12.0668H19.3808Z" fill="#42454A"/>
+                    </a>
+                   </svg>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="text-center pb-3">
+            <p class="Copyright">© Copyright 2021. All rights reserved.</p>
+          </div>
+  
+        </div>
+      </footer>
+      <!--/Footer-->
+    </div>
+</body>
+</html>
